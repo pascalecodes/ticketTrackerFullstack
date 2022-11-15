@@ -5,7 +5,7 @@ module.exports = {
         try {
             const tickets = await
             TicketList.find()
-            res.render("index.ejs", { TicketList: tickets });
+            res.render("index.ejs", { ticketList: tickets });
         } catch (err) {
             if (err) return res.status(500).send(err);
         }
